@@ -28,6 +28,9 @@ body {
 .header__logo {
   width: 16%;
 }
+.header__logo:hover {
+  scale: 1.2;
+}
 .header__navigation {
   width: 100%;
   height: 100%;
@@ -274,6 +277,10 @@ body {
     margin: 4%;
     margin-bottom: 5%;
   }
+  .contact__redirect:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
   .contact__redirect img {
     border: 1px solid green;
     width: 25%;
@@ -351,6 +358,10 @@ body {
     background-color: green;
     width: 30%;
   }
+  .contact__redirect:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
   .contact__redirect p {
     color: white;
   }
@@ -417,6 +428,10 @@ body {
     background-color: green;
     width: 40%;
     border-radius: 15px;
+  }
+  .contact__redirect:hover {
+    cursor: pointer;
+    scale: 1.1;
   }
   .contact__redirect img {
     width: 20%;

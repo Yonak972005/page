@@ -28,6 +28,9 @@ body {
 .header__logo {
   width: 16%;
 }
+.header__logo:hover {
+  scale: 1.2;
+}
 .header__navigation {
   width: 100%;
   height: 100%;
