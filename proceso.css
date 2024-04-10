@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+}
+@media (min-width: 1100px) {
+  .header {
+    width: 100%;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+    position: sticky;
+    top: 0;
+  }
+}
+.header__logo {
+  width: 16%;
+}
+.header__navigation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 1100px) {
+  .header__navigation {
+    width: 590px;
+    height: 100%;
+  }
+}
+.header__menu {
+  margin-left: 4%;
+  width: 5%;
+}
+.header__menu:hover {
+  cursor: pointer;
+}
+@media (min-width: 1100px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+.navbar {
+  display: none;
+  width: 400px;
+}
+.navbar__items {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__link {
+  text-decoration: none;
+  color: hsl(220, 13%, 13%);
+  display: block;
+  width: 100%;
+  height: 90px;
+  padding-top: 35px;
+}
+.navbar__link:hover {
+  border-bottom: 3px solid green;
+  color: green;
+  font-size: 17px;
+  font-weight: 700;
+}
+@media (min-width: 1100px) {
+  .navbar {
+    display: block;
+  }
+}
+
+.modal-navbar {
+  background-color: rgb(255, 255, 255);
+  width: 65%;
+  height: 100%;
+  padding: 28px 24px;
+}
+.modal-navbar__background {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.modal-navbar__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+  list-style: none;
+  margin-top: 15%;
+  margin-left: 6%;
+}
+.modal-navbar__link {
+  text-decoration: none;
+  color: hsl(220, 13%, 13%);
+  font-weight: 700;
+  font-size: 50px;
+}
+.modal-navbar__close-icon {
+  margin: 3%;
+  width: 6%;
+}
+.modal-navbar__close-icon:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+
+.process__title-container {
+  padding: 4%;
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+  box-shadow: 0px 10px 20px -20px rgba(0, 0, 0, 0.27);
+}
+.process__tittle {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 350%;
+  font-weight: 900;
+}
+.process__text {
+  font-size: 200%;
+  margin-left: 2%;
+  margin-right: 2%;
+  justify-content: space-between;
+}
+.process__text p {
+  padding: 2%;
+}
+.process__container-image {
+  text-align: center;
+}
+.process__container-image2 {
+  text-align: center;
+}
+.process__container-image img {
+  width: 80%;
+  border-radius: 20px;
+}
+.process__container-image2 img {
+  width: 80%;
+  border-radius: 20px;
+}
+.process__lista {
+  justify-content: space-between;
+  padding-left: 6%;
+  margin-left: 40px;
+}
+@media (min-width: 990px) {
+  .process {
+    width: 100%;
+  }
+  .process__title-container {
+    padding: 4%;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+    box-shadow: 0px 10px 20px -20px rgba(0, 0, 0, 0.27);
+  }
+  .process__tittle {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 390%;
+    font-weight: 900;
+  }
+  .process__text {
+    font-size: 300%;
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content: space-between;
+  }
+  .process__text p {
+    padding: 2%;
+  }
+  .process__container-image {
+    text-align: center;
+  }
+  .process__container-image2 {
+    text-align: center;
+  }
+  .process__container-image img {
+    width: 80%;
+    border-radius: 20px;
+  }
+  .process__container-image2 img {
+    width: 80%;
+    border-radius: 20px;
+  }
+  .process__lista {
+    justify-content: space-between;
+    padding-left: 6%;
+    margin-left: 40px;
+  }
+}
+@media (min-width: 1100px) {
+  .process {
+    width: 100%;
+  }
+  .process__title-container {
+    padding: 15px;
+    margin: 10px;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+    box-shadow: 0px 10px 20px -20px rgba(0, 0, 0, 0.27);
+  }
+  .process__tittle {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 230%;
+    font-weight: 900;
+  }
+  .process__text {
+    padding: 0px 10%;
+    padding-bottom: 70px;
+    font-size: 200%;
+  }
+  .process__text p {
+    padding: 1%;
+    font-size: 18px;
+    margin: 1%;
+  }
+  .process__container-image {
+    width: 42%;
+    float: left;
+  }
+  .process__container-image2 {
+    width: 42%;
+    float: right;
+  }
+  .process__container-image img {
+    border-radius: 10px;
+  }
+  .process__container-image2 img {
+    border-radius: 10px;
+  }
+  .process__lista {
+    font-size: 16px;
+  }
+}
+@media (min-width: 2000px) {
+  .process {
+    width: 100%;
+  }
+  .process__title-container {
+    padding: 15px;
+    margin: 10px;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+    box-shadow: 0px 10px 20px -20px rgba(0, 0, 0, 0.27);
+  }
+  .process__tittle {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 300%;
+    font-weight: 900;
+  }
+  .process__text {
+    padding: 0px 10%;
+    padding-bottom: 70px;
+  }
+  .process__text p {
+    padding: 1%;
+    font-size: 100%;
+    margin: 1%;
+  }
+  .process__container-image {
+    width: 42%;
+    float: left;
+  }
+  .process__container-image2 {
+    width: 42%;
+    float: right;
+  }
+  .process__container-image img {
+    border-radius: 10px;
+  }
+  .process__container-image2 img {
+    border-radius: 10px;
+  }
+  .process__lista {
+    font-size: 100%;
+  }
+}
+
+.main-container {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+@media (min-width: 1100px) {
+  .main-container {
+    width: 80%;
+    height: auto;
+  }
+}
+@media (min-width: 2000px) {
+  .main-container {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1100px) {
+  .content {
+    width: 100%;
+    display: flex;
+    padding: 5% 5%;
+    gap: 124px;
+  }
+}
+@media (min-width: 2000px) {
+  .content {
+    width: 100%;
+    display: flex;
+    padding: 5% 5%;
+    gap: 124px;
+  }
+}
+
+/*# sourceMappingURL=proceso.css.map */

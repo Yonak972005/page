@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+}
+@media (min-width: 1100px) {
+  .header {
+    width: 100%;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+    position: sticky;
+    top: 0;
+  }
+}
+.header__logo {
+  width: 16%;
+}
+.header__navigation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 1100px) {
+  .header__navigation {
+    width: 590px;
+    height: 100%;
+  }
+}
+.header__menu {
+  margin-left: 4%;
+  width: 5%;
+}
+.header__menu:hover {
+  cursor: pointer;
+}
+@media (min-width: 1100px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+.navbar {
+  display: none;
+  width: 400px;
+}
+.navbar__items {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__link {
+  text-decoration: none;
+  color: hsl(220, 13%, 13%);
+  display: block;
+  width: 100%;
+  height: 90px;
+  padding-top: 35px;
+}
+.navbar__link:hover {
+  border-bottom: 3px solid green;
+  color: green;
+  font-size: 17px;
+  font-weight: 700;
+}
+@media (min-width: 1100px) {
+  .navbar {
+    display: block;
+  }
+}
+
+.modal-navbar {
+  background-color: rgb(255, 255, 255);
+  width: 65%;
+  height: 100%;
+  padding: 28px 24px;
+}
+.modal-navbar__background {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.modal-navbar__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+  list-style: none;
+  margin-top: 15%;
+  margin-left: 6%;
+}
+.modal-navbar__link {
+  text-decoration: none;
+  color: hsl(220, 13%, 13%);
+  font-weight: 700;
+  font-size: 50px;
+}
+.modal-navbar__close-icon {
+  margin: 3%;
+  width: 6%;
+}
+.modal-navbar__close-icon:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+
+.gallery__image-container {
+  height: 800px;
+  width: 100%;
+  background-image: url(./images/image-estiba-1.jpg);
+  background-size: cover;
+}
+.gallery__previus {
+  background-color: rgb(87, 219, 87);
+  width: 7%;
+  height: 9%;
+  padding: 15px;
+  border-radius: 50%;
+  position: relative;
+  top: 40%;
+  right: -5%;
+}
+.gallery__previus:hover {
+  cursor: pointer;
+}
+.gallery__next {
+  background-color: rgb(87, 219, 87);
+  width: 7%;
+  height: 9%;
+  padding: 15px;
+  border-radius: 50%;
+  position: relative;
+  top: 40%;
+  left: 80%;
+}
+.gallery__next:hover {
+  cursor: pointer;
+}
+.gallery__thumbnails {
+  border-color: 1px solid rgb(0, 0, 0);
+  display: none;
+}
+@media (min-width: 1100px) {
+  .gallery__thumbnails {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.gallery__thumbnail {
+  width: 20%;
+  border-radius: 16px;
+}
+.gallery__thumbnail:hover {
+  cursor: pointer;
+  border: 2px solid green;
+}
+@media (min-width: 1100px) {
+  .gallery {
+    width: 446px;
+  }
+  .gallery__image-container {
+    border-radius: 20px;
+    height: 446px;
+    width: 446px;
+    margin-bottom: 5%;
+    border: 1px solid #8a8686;
+  }
+  .gallery__previus {
+    display: none;
+  }
+  .gallery__next {
+    display: none;
+  }
+}
+@media (min-width: 2000px) {
+  .gallery {
+    width: 850px;
+  }
+  .gallery__image-container {
+    border-radius: 20px;
+    height: 850px;
+    width: 850px;
+    margin-bottom: 5%;
+    border: 1px solid #8a8686;
+  }
+  .gallery__previus {
+    display: none;
+  }
+  .gallery__next {
+    display: none;
+  }
+}
+
+.details {
+  height: auto;
+  padding-top: 3%;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.details__company {
+  color: green;
+  text-transform: uppercase;
+  font-size: 80%;
+  letter-spacing: 1px;
+  margin-bottom: 3%;
+  margin-top: 2%;
+}
+.details__title {
+  font-size: 300%;
+  margin-bottom: 4%;
+}
+.details__description {
+  font-size: 200%;
+  color: hsl(219, 9%, 45%);
+  margin-bottom: 4%;
+}
+.details__redirect {
+  background-color: green;
+  border-radius: 15px;
+  margin: 4%;
+  margin-bottom: 5%;
+}
+.details__redirect img {
+  width: 25%;
+  height: 100%;
+  float: left;
+  margin: 1%;
+}
+.details__redirect p {
+  float: right;
+  font-size: 300%;
+  margin-right: 20%;
+  margin-top: 5%;
+  color: white;
+}
+@media (min-width: 990px) {
+  .details {
+    height: auto;
+    padding-top: 3%;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .details__company {
+    color: green;
+    text-transform: uppercase;
+    font-size: 200%;
+    letter-spacing: 1px;
+    margin-bottom: 3%;
+    margin-top: 2%;
+  }
+  .details__title {
+    font-size: 350%;
+    margin-bottom: 6%;
+  }
+  .details__description {
+    font-size: 270%;
+    color: hsl(219, 9%, 45%);
+    margin-bottom: 6%;
+  }
+  .details__redirect {
+    background-color: green;
+    border-radius: 15px;
+    margin: 4%;
+    margin-bottom: 5%;
+  }
+  .details__redirect img {
+    border: 1px solid green;
+    width: 25%;
+    height: 100%;
+    float: left;
+    margin: 1%;
+  }
+  .details__redirect p {
+    float: right;
+    font-size: 320%;
+    margin-right: 20%;
+    margin-top: 5%;
+    color: white;
+  }
+}
+@media (min-width: 1100px) {
+  .details {
+    width: 470px;
+    padding: 3%;
+    padding-top: 7%;
+  }
+  .details__company {
+    margin-bottom: 5%;
+    font-size: 110%;
+  }
+  .details__title {
+    font-size: 200%;
+    margin-bottom: 6%;
+  }
+  .details__description {
+    font-size: 110%;
+    color: hsl(219, 9%, 45%);
+    line-height: 120%;
+  }
+  .details__redirect {
+    margin-left: 10%;
+    margin-bottom: 4%;
+    width: 300px;
+  }
+  .details__redirect img {
+    width: 20%;
+    float: left;
+    margin: 1%;
+  }
+  .details__redirect p {
+    float: right;
+    font-size: 110%;
+    font-weight: 700;
+    margin-bottom: 5%;
+    color: white;
+  }
+}
+@media (min-width: 2000px) {
+  .details {
+    width: 800px;
+    padding: 3%;
+    padding-top: 7%;
+  }
+  .details__company {
+    margin-bottom: 5%;
+    font-size: 150%;
+  }
+  .details__title {
+    font-size: 350%;
+    margin-bottom: 6%;
+  }
+  .details__description {
+    font-size: 200%;
+    color: hsl(219, 9%, 45%);
+    line-height: 120%;
+  }
+  .details__redirect {
+    margin-left: 10%;
+    margin-bottom: 4%;
+    width: 500px;
+  }
+  .details__redirect img {
+    border: 1px solid green;
+    width: 20%;
+    float: left;
+    margin: 1%;
+  }
+  .details__redirect p {
+    float: right;
+    font-size: 180%;
+    font-weight: 700;
+    margin-bottom: 5%;
+    color: white;
+  }
+}
+
+.modal-gallery__thumbnails {
+  display: none;
+}
+.modal-gallery__close-container {
+  display: none;
+}
+@media (min-width: 1100px) {
+  .modal-gallery {
+    width: 550px;
+  }
+  .modal-gallery__background {
+    background-color: hsla(0, 0%, 0%, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+    place-content: center;
+  }
+  .modal-gallery__close-container {
+    text-align: right;
+    height: 30px;
+    display: block;
+  }
+  .modal-gallery__close:hover {
+    cursor: pointer;
+    content: url(./images/icon-close-green.svg);
+  }
+  .modal-gallery__image-container {
+    background-image: url(./images/image-estiba-1.jpg);
+    background-size: cover;
+    width: 550px;
+    height: 450px;
+    border-radius: 16px;
+    margin-bottom: 3%;
+  }
+  .modal-gallery__thumbnails {
+    border-color: 1px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+  }
+  .modal-gallery__thumbnail {
+    border-color: 1px solid rgb(0, 0, 0);
+    width: 20%;
+    border-radius: 16px;
+  }
+  .modal-gallery__thumbnail:hover {
+    cursor: pointer;
+    border: 2px solid green;
+  }
+}
+
+.main-container {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+@media (min-width: 1100px) {
+  .main-container {
+    width: 80%;
+    height: auto;
+  }
+}
+@media (min-width: 2000px) {
+  .main-container {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1100px) {
+  .content {
+    width: 100%;
+    display: flex;
+    padding: 5% 5%;
+    gap: 124px;
+  }
+}
+@media (min-width: 2000px) {
+  .content {
+    width: 100%;
+    display: flex;
+    padding: 5% 5%;
+    gap: 124px;
+  }
+}
+
+/*# sourceMappingURL=estibas.css.map */

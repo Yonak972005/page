@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="venta.css">
+    <link rel="shortcut icon" href="./images/Icon.png" />
+    <title>EcoCanas</title>
+</head>
+
+<body>
+    <main class="main-container">
+        <header class="header">
+            <div class="header__navigation">
+                <img class="header__menu" src="./images/icon-menu.svg" alt="icon-menu">
+                <img class="header__logo" src="./images/Imagen_sin_fondo.png" alt="icon">
+
+                <nav class="navbar">
+                    <ul class="navbar__items">
+                        <li><a class="navbar__link" href="./index.html">Inicio</a></li>
+                        <li><a class="navbar__link" href="./index.html">Productos</a></li>
+                        <li><a class="navbar__link" href="./proceso.html">Proceso</a></li>
+                        <li><a class="navbar__link" href="./contactenos.html">Contactenos</a></li>
+                    </ul>            
+                </nav>
+                
+            </div>
+
+
+    <!-- inicio modal navbar -->
+
+            <div class="modal-navbar__background">
+                <nav class="modal-navbar">
+                    <img class="modal-navbar__close-icon" src="./images/icon-close.svg" alt="cierre">
+                    <ul class="modal-navbar__items">
+                        <li><a class="modal-navbar__link" href="./index.html">Inicio</a></li>
+                        <li><a class="modal-navbar__link" href="./index.html">Productos</a></li>
+                        <li><a class="modal-navbar__link" href="./proceso.html">Proceso</a></li>
+                        <li><a class="modal-navbar__link" href="./contactenos.html">Contactenos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <!-- final modal navbar -->
+
+        <section class="content">
+            <article class="gallery">
+                <div class="gallery__image-container">
+                    <img class="gallery__previus" src="./images/icon-previous.svg" alt="gallery__prebius">
+                    <img class="gallery__next" src="./images/icon-next.svg" alt="gallery__next">
+                </div>
+
+                <div class="gallery__thumbnails">
+                    <img id="1" class="gallery__thumbnail" src="./images/image-venta-1-thumbnail.jpg" alt="thumbnail">
+                    <img id="2" class="gallery__thumbnail" src="./images/image-venta-2-thumbnail.jpg" alt="thumbnail">
+                    <img id="3" class="gallery__thumbnail" src="./images/image-venta-3-thumbnail.jpg" alt="thumbnail">
+                    <img id="4" class="gallery__thumbnail" src="./images/image-venta-4-thumbnail.jpg" alt="thumbnail">
+                </div>
+            </article>
+            <article class="details">
+                <h2 class="details__company">EcoCanas</h2>
+                <h2 class="details__title">Se comprar canastillas y estibas en mal estado</h2>
+                <p class="details__description">Compra de Canastilas y estibas, Para reciclaje y restauracion</p>
+                <a href="https://api.whatsapp.com/send?phone=3114873550&text=Hola, quiero realizar una venta!" target="_blank">
+                <button class="details__redirect"> <img src="./images/whatsapp.png" alt="Pedidos por Whatsapp"><p>Pedidos por Whatsapp</p></button>
+                </a>
+            </article>
+        </section>
+    </main>
+        <!-- inicio gallery modal -->
+        <div class="modal-gallery__background">
+            <article class="modal-gallery">
+                <div class="modal-gallery__close-container">
+                    <img class="modal-gallery__close" src="./images/icon-close.svg" alt="icon-close">
+                </div>
+                <div class="modal-gallery__image-container">
+                </div>
+        
+                <div class="modal-gallery__thumbnails">
+                    <img id="m1" class="modal-gallery__thumbnail" src="./images/image-venta-1-thumbnail.jpg" alt="thumbnail">
+                    <img id="m2" class="modal-gallery__thumbnail" src="./images/image-venta-2-thumbnail.jpg" alt="thumbnail">
+                    <img id="m3" class="modal-gallery__thumbnail" src="./images/image-venta-3-thumbnail.jpg" alt="thumbnail">
+                    <img id="m4" class="modal-gallery__thumbnail" src="./images/image-venta-4-thumbnail.jpg" alt="thumbnail">
+                </div>
+            </article>
+        </div>
+        <!-- fin gallery modal -->
+</body> 
+
+<script src="./venta.js">
+</script>
+</html>
