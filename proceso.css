@@ -85,6 +85,30 @@ body {
     display: block;
   }
 }
+@media (min-width: 2000px) {
+  .navbar {
+    display: block;
+    font-size: 180%;
+  }
+  .navbar__items {
+    width: 700px;
+    list-style: none;
+    display: flex;
+  }
+  .navbar__link {
+    text-decoration: none;
+    color: hsl(220, 13%, 13%);
+    display: block;
+    width: 100%;
+    height: 90px;
+    padding-top: 35px;
+  }
+  .navbar__link:hover {
+    border-bottom: 3px solid green;
+    color: green;
+    font-size: 110%;
+  }
+}
 
 .modal-navbar {
   background-color: rgb(255, 255, 255);

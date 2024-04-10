@@ -85,6 +85,22 @@ body {
     display: block;
   }
 }
+@media (min-width: 2000px) {
+  .navbar {
+    display: block;
+    font-size: 180%;
+  }
+  .navbar__items {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar__items {
+    width: 700px;
+    list-style: none;
+    display: flex;
+  }
+}
 
 .modal-navbar {
   background-color: rgb(255, 255, 255);
